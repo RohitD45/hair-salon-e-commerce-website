@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Admin - MP09 Saloon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #c9a96e;
+            --dark: #1a1612;
+            --dark2: #2c2520;
+            --cream: #f5f0e8;
+            --text-muted: #9a8f82;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: var(--dark);
+            color: var(--cream);
+            font-family: 'Jost', sans-serif;
+            min-height: 100vh;
+        }
+        .admin-navbar {
+            background: var(--dark2);
+            border-bottom: 1px solid rgba(201,169,110,0.2);
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .admin-logo {
+            font-size: 20px;
+            color: var(--gold);
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        .back-btn {
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            text-decoration: none;
+            border: 1px solid rgba(201,169,110,0.2);
+            padding: 8px 20px;
+            transition: all 0.3s;
+        }
+        .back-btn:hover {
+            color: var(--gold);
+            border-color: var(--gold);
+        }
+        .page-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 70px);
+            padding: 40px 20px;
+        }
+        .form-box {
+            width: 100%;
+            max-width: 460px;
+            background: var(--dark2);
+            border: 1px solid rgba(201,169,110,0.2);
+            padding: 48px;
+        }
+        .form-title {
+            font-size: 11px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 32px;
+            text-align: center;
+        }
+        .form-label {
+            display: block;
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+        .form-control {
+            width: 100%;
+            background: var(--dark);
+            border: 1px solid rgba(201,169,110,0.2);
+            color: var(--cream);
+            padding: 12px 16px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+            margin-bottom: 20px;
+            font-family: 'Jost', sans-serif;
+        }
+        .form-control:focus { border-color: var(--gold); }
+        .btn-submit {
+            width: 100%;
+            background: var(--gold);
+            color: var(--dark);
+            border: none;
+            padding: 14px;
+            font-size: 11px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Jost', sans-serif;
+        }
+        .btn-submit:hover { background: #e8d5b0; }
+        .alert-error {
+            background: rgba(220,53,69,0.15);
+            border: 1px solid rgba(220,53,69,0.3);
+            color: #dc3545;
+            padding: 12px 16px;
+            font-size: 13px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .alert-success {
+            background: rgba(40,167,69,0.15);
+            border: 1px solid rgba(40,167,69,0.3);
+            color: #28a745;
+            padding: 12px 16px;
+            font-size: 13px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="admin-navbar">
+    <div class="admin-logo">MP09 Family Saloon</div>
+    <a href="/admin" class="back-btn">← Back to Dashboard</a>
+</div>
+
+<div class="page-content">
+    <div class="form-box">
+        <div class="form-title">Add New Admin</div>
+
+        <div class="alert-error" th:if="${error}" th:text="${error}"></div>
+        <div class="alert-success" th:if="${success}" th:text="${success}"></div>
+
+        <form th:action="@{/admin/add-admin}" method="post">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control"
+                   name="username"
+                   placeholder="Enter username" required>
+
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control"
+                   name="password"
+                   placeholder="Enter password" required>
+
+            <button type="submit" class="btn-submit">Add Admin</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP09-Family Saloon </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Flatpickr CSS - Calendar picker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+
+        <!-- LOGO -->
+        <a class="navbar-brand" href="#">MP09-Family Saloon</a>
+
+        <!-- HAMBURGER BUTTON (mobile ke liye) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAV LINKS -->
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="#booking">Book</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item">
+                    <a class="btn-book ms-3" href="#booking">Book Now</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="row min-vh-100 align-items-center justify-content-between">
+
+            <!-- LEFT - Text -->
+            <div class="col-lg-6 col-md-12">
+                <p class="hero-tag">Premium Hair Family Saloon · Est. 2019</p>
+                <h1 class="hero-title">
+                    Where Art <br>Meets <span>Beauty</span>
+                </h1>
+                <p class="hero-sub">
+                    Indore's premium Hair Family Salon
+                    Where Their is Your Choise only this is आपके बालों का हैप्पी प्लेस
+                </p>
+                <div class="hero-btns">
+                    <a href="#booking" class="btn-primary-custom">Reserve Your Chair</a>
+                    <a href="#services" class="btn-ghost-custom">Our Services</a>
+                </div>
+            </div>
+
+            <!-- RIGHT - Slider (ye naya add kar) -->
+            <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-end">
+                <div class="hero-slider">
+                    <div class="slide active">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5jjFvE2Hk9T-d2E4Z88bHvpzcsCoGioy09w&s"
+                             alt="salon 1">
+                    </div>
+                    <div class="slide">
+                        <img src="https://content.jdmagicbox.com/comp/indore/x5/0731px731.x731.220921223236.s9x5/catalogue/mp09-hair-salon-indore-ghlx6njt7y.jpg"
+                             alt="salon 2">
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=500&q=80"
+                             alt="salon 3">
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.jdmagicbox.com/comp/indore/l1/0731px731.x731.221007162338.h8l1/catalogue/massimo-salon-and-academy-vishnu-puri-colony-indore-beauty-parlours-c7ambkr2hy-250.jpg"
+                             alt="salon 4">
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=500&q=80"
+                             alt="salon 5">
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=500&q=80"
+                             alt="salon 6">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- SERVICES SECTION -->
+<section class="services" id="services">
+    <div class="container">
+
+        <!-- HEADING -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="section-tag">What We Offer</p>
+                <h2 class="section-title">Our <span>Signature</span> Services</h2>
+                <p class="section-sub">Each treatment is a ritual — crafted with premium products and years of
+                    mastery.</p>
+            </div>
+        </div>
+
+        <!-- CARDS -->
+        <div class="row g-4 mt-3">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <div class="service-num">01</div>
+                    <h3 class="service-name">Precision Haircut</h3>
+                    <p class="service-desc">Tailor-made cuts designed for your face shape, lifestyle, and
+                        personality.</p>
+                    <div class="service-price">From ₹ 800</div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <div class="service-num">02</div>
+                    <h3 class="service-name">Balayage & Ombré</h3>
+                    <p class="service-desc">Sun-kissed gradients hand-painted to create natural depth and dimension.
+                    </p>
+                    <div class="service-price">From ₹ 3,500</div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <div class="service-num">03</div>
+                    <h3 class="service-name">Keratin Treatment</h3>
+                    <p class="service-desc">Transform frizz into silk. Restores and smoothens for up to 6 months.
+                    </p>
+                    <div class="service-price">From ₹ 4,200</div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <div class="service-num">04</div>
+                    <h3 class="service-name">Scalp & Hair Spa</h3>
+                    <p class="service-desc">A deeply nourishing ritual — steam, oils, massage — leaving scalp
+                        refreshed.</p>
+                    <div class="service-price">From ₹ 1,200</div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <div class="service-num">05</div>
+                    <h3 class="service-name">Bridal Package</h3>
+                    <p class="service-desc">Your wedding day, perfected. Trial + styling + touch-up kit included.
+                    </p>
+                    <div class="service-price">From ₹ 12,000</div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <div class="service-num">06</div>
+                    <h3 class="service-name">Global Colour</h3>
+                    <p class="service-desc">Rich, even tones across every strand using ammonia-free professional
+                        colour.</p>
+                    <div class="service-price">From ₹ 1,800</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+    <div class="marquee-track">
+        <span class="marquee-item">Haircuts <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Balayage <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Keratin Treatment <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Hair Spa <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Highlights <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Bridal Styling <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Scalp Treatment <span class="marquee-dot">✦</span></span>
+        <!-- Same items repeat karo seamless loop ke liye -->
+        <span class="marquee-item">Haircuts <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Balayage <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Keratin Treatment <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Hair Spa <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Highlights <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Bridal Styling <span class="marquee-dot">✦</span></span>
+        <span class="marquee-item">Scalp Treatment <span class="marquee-dot">✦</span></span>
+    </div>
+</div>
+
+<!-- TEAM SECTION -->
+<section class="team-section" id="team">
+    <div class="container">
+
+        <!-- HEADING -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="section-tag">Meet The Artists</p>
+                <h2 class="section-title">The Hands Behind <span>Your Look</span></h2>
+                <p class="section-sub">Expert stylists at every location, ready to transform you.</p>
+            </div>
+        </div>
+
+        <!-- LOCATION DROPDOWN -->
+        <div class="row mt-5">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="location-dropdown">
+                    <select id="locationSelect" onchange="filterTeam()">
+                        <option value="bhawar">📍 Bhawar Kua, Indore</option>
+                        <option value="ranjeet">📍 Ranjeet Hanuman Road, Indore</option>
+                        <option value="kesar">📍 Kesar Bagh Road, Indore</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEAM CARDS -->
+        <div class="row g-4 mt-4" id="teamContainer">
+
+            <!-- BHAWAR KUA TEAM -->
+            <div class="col-lg-4 col-md-6 team-card-wrap" data-location="bhawar">
+                <div class="team-card">
+                    <div class="team-avatar">A</div>
+                    <h4 class="team-name">Arjun Sharma</h4>
+                    <p class="team-role">Head Stylist</p>
+                    <p class="team-exp">8 Years Experience</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 team-card-wrap" data-location="bhawar">
+                <div class="team-card">
+                    <div class="team-avatar">P</div>
+                    <h4 class="team-name">Priya Verma</h4>
+                    <p class="team-role">Colour Specialist</p>
+                    <p class="team-exp">5 Years Experience</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 team-card-wrap" data-location="bhawar">
+                <div class="team-card">
+                    <div class="team-avatar">R</div>
+                    <h4 class="team-name">Rahul Patel</h4>
+                    <p class="team-role">Keratin Expert</p>
+                    <p class="team-exp">6 Years Experience</p>
+                </div>
+            </div>
+
+            <!-- RANJEET ROAD TEAM -->
+            <div class="col-lg-4 col-md-6 team-card-wrap" data-location="ranjeet">
+                <div class="team-card">
+                    <div class="team-avatar">S</div>
+                    <h4 class="team-name">Sneha Joshi</h4>
+                    <p class="team-role">Bridal Specialist</p>
+                    <p class="team-exp">7 Years Experience</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 team-card-wrap" data-location="ranjeet">
+                <div class="team-card">
+                    <div class="team-avatar">V</div>
+                    <h4 class="team-name">Vikram Das</h4>
+                    <p class="team-role">Precision Stylist</p>
+                    <p class="team-exp">9 Years Experience</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 team-card-wrap" data-location="ranjeet">
+                <div class="team-card">
+                    <div class="team-avatar">N</div>
+                    <h4 class="team-name">Nisha Gupta</h4>
+                    <p class="team-role">Hair Spa Expert</p>
+                    <p class="team-exp">4 Years Experience</p>
+                </div>
+            </div>
+
+            <!-- KESAR BAGH TEAM -->
+            <div class="col-lg-4 col-md-6 team-card-wrap" data-location="kesar">
+                <div class="team-card">
+                    <div class="team-avatar">M</div>
+                    <h4 class="team-name">Meera Singh</h4>
+                    <p class="team-role">Head Colourist</p>
+                    <p class="team-exp">10 Years Experience</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 team-card-wrap" data-location="kesar">
+                <div class="team-card">
+                    <div class="team-avatar">K</div>
+                    <h4 class="team-name">Karan Mehta</h4>
+                    <p class="team-role">Treatment Expert</p>
+                    <p class="team-exp">5 Years Experience</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 team-card-wrap" data-location="kesar">
+                <div class="team-card">
+                    <div class="team-avatar">A</div>
+                    <h4 class="team-name">Anita Rawat</h4>
+                    <p class="team-role">Styling Artist</p>
+                    <p class="team-exp">6 Years Experience</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- BOOKING SECTION -->
+<section class="booking-section" id="booking">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="section-tag">Get In The Chair</p>
+                <h2 class="section-title">Book Your <span>Appointment</span></h2>
+                <p class="section-sub">Select your stylist and preferred time — we'll confirm your slot instantly.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-7 col-md-10">
+
+                <!-- CONFIRMATION MESSAGE (hidden by default) -->
+                <div class="confirm-msg" id="confirmMsg">
+                    <div class="confirm-icon">✓</div>
+                    <h3>Appointment Confirmed!</h3>
+                    <p id="confirmText"></p>
+                    <button class="btn-primary-custom mt-3" onclick="resetForm()">Book Another</button>
+                </div>
+
+                <!-- BOOKING FORM -->
+                <div class="booking-form" id="bookingForm">
+
+                    <!-- STEP 1 - Location -->
+                    <div class="form-group">
+                        <label>Select Location</label>
+                        <select id="bookLocation" onchange="loadStylists()">
+                            <option value="">-- Choose Location --</option>
+                            <option value="bhawar">Bhawar Kua, Indore</option>
+                            <option value="ranjeet">Ranjeet Hanuman Road, Indore</option>
+                            <option value="kesar">Kesar Bagh Road, Indore</option>
+                        </select>
+                    </div>
+
+                    <!-- STEP 2 - Stylist -->
+                    <div class="form-group" id="stylistGroup" style="display:none;">
+                        <label>Select Stylist</label>
+                        <select id="bookStylist" onchange="loadSlots()">
+                            <option value="">-- Choose Stylist --</option>
+                        </select>
+                    </div>
+
+                    <!-- STEP 3 - Date -->
+                    <div class="form-group" id="dateGroup" style="display:none;">
+                        <label>Select Date</label>
+                        <input type="date" id="bookDate" onchange="loadSlots()">
+                    </div>
+
+                    <!-- STEP 4 - Time Slots -->
+                    <div class="form-group" id="slotsGroup" style="display:none;">
+                        <label>Available Time Slots</label>
+                        <div class="slots-container" id="slotsContainer"></div>
+                    </div>
+
+                    <!-- STEP 5 - Personal Details -->
+                    <div id="personalDetails" style="display:none;">
+                        <div class="form-row-custom">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" id="bookName" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" id="bookPhone" placeholder="+91 98765 43210">
+                            </div>
+                        </div>
+
+                        <button class="btn-primary-custom w-100 mt-3" onclick="submitBooking()">
+                            Confirm Appointment
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="testimonials">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="section-tag">Client Love</p>
+                <h2 class="section-title">What They <span>Say About Us</span></h2>
+                <p class="section-sub">Real experiences from our happy clients across all locations.</p>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-5">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="test-card">
+                    <div class="test-quote">"</div>
+                    <div class="test-stars">★★★★★</div>
+                    <p class="test-text">Arjun ne meri haircut ekdum perfect ki! Maine pehle itna acha kaam kisi se
+                        nahi karwaya. Bhawar Kua branch is the best!</p>
+                    <div class="test-author">Rohit Sharma <span>· Bhawar Kua</span></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="test-card">
+                    <div class="test-quote">"</div>
+                    <div class="test-stars">★★★★★</div>
+                    <p class="test-text">Priya ne mera balayage exactly waisa kiya jaisa maine socha tha. Natural
+                        aur elegant — bilkul perfect! Will visit again.</p>
+                    <div class="test-author">Sneha Joshi <span>· Kesar Bagh</span></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="test-card">
+                    <div class="test-quote">"</div>
+                    <div class="test-stars">★★★★★</div>
+                    <p class="test-text">Keratin treatment ne meri life badal di! Ab roz 45 minute waste nahi hote.
+                        Smooth aur shiny hair every single day.</p>
+                    <div class="test-author">Meera Patel <span>· Ranjeet Road</span></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="test-card">
+                    <div class="test-quote">"</div>
+                    <div class="test-stars">★★★★★</div>
+                    <p class="test-text">Bridal package liya tha — poori team ne itna dhyan diya. Wedding day pe
+                        main bilkul princess jaisi feel kar rahi thi!</p>
+                    <div class="test-author">Ritika Verma <span>· Bhawar Kua</span></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="test-card">
+                    <div class="test-quote">"</div>
+                    <div class="test-stars">★★★★★</div>
+                    <p class="test-text">Hair spa ka experience ekdum relaxing tha. Staff bahut professional hai aur
+                        salon ka atmosphere bhi bohot acha hai.</p>
+                    <div class="test-author">Ankit Gupta <span>· Kesar Bagh</span></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="test-card">
+                    <div class="test-quote">"</div>
+                    <div class="test-stars">★★★★★</div>
+                    <p class="test-text">Global colour karwaya — bilkul natural dikh raha hai. Karan bhai ne bahut
+                        patiently suna aur exactly wahi kiya jo main chahta tha.</p>
+                    <div class="test-author">Vikash Singh <span>· Ranjeet Road</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <div class="container">
+
+        <!-- TOP FOOTER -->
+        <div class="row g-5 footer-top">
+
+            <!-- BRAND -->
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-logo">MP09 Family Saloon</div>
+                <p class="footer-tagline">A sanctuary of style and self-expression across Indore.</p>
+                <div class="social-links">
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/919876543210" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="col-lg-2 col-md-6">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                </ul>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="col-lg-2 col-md-6">
+                <h4 class="footer-heading">Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Haircuts</a></li>
+                    <li><a href="#">Balayage</a></li>
+                    <li><a href="#">Keratin</a></li>
+                    <li><a href="#">Hair Spa</a></li>
+                    <li><a href="#">Bridal</a></li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="footer-heading">Contact Us</h4>
+                <ul class="footer-links">
+                    <li>📍 Bhawar Kua, Indore</li>
+                    <li>📍 Ranjeet Hanuman Road, Indore</li>
+                    <li>📍 Kesar Bagh Road, Indore</li>
+                    <li>📞 +91 98765 43210</li>
+                    <li>📞 +91 91234 56789</li>
+                    <li>✉️ mp09salon@gmail.com</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- MAPS SECTION -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h4 class="footer-heading mb-4">Find Us</h4>
+            </div>
+
+            <div class="col-lg-4 col-md-12 mb-4">
+                <p class="map-label">📍 Bhawar Kua, Indore</p>
+                <div class="map-wrapper">
+                    <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7496.441462312141!2d75.85571712952766!3d22.6866867335792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd8c4791641b%3A0xab967810e60c5ec7!2sMP09%20The%20Unisex%20Family%20Salon%20%26%20Academy!5e1!3m2!1sen!2sin!4v1776491386042!5m2!1sen!2sin"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 mb-4">
+                <p class="map-label">📍 Ranjeet Hanuman Road, Indore</p>
+                <div class="map-wrapper">
+                    <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119944.43651824941!2d75.64888933499783!3d22.68511761105446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fdcee423aced%3A0x105d81102a61cac3!2sMp%2009%20family%20saloon!5e1!3m2!1sen!2sin!4v1776491490335!5m2!1sen!2sin"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 mb-4">
+                <p class="map-label">📍 Kesar Bagh Road, Indore</p>
+                <div class="map-wrapper">
+                    <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14992.670685242067!2d75.82441806793214!3d22.688626869300187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd20fa997169%3A0x6b4fc6f2b1a2ab3b!2sMP09%20family%20salon%202!5e1!3m2!1sen!2sin!4v1776491552335!5m2!1sen!2sin"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM FOOTER -->
+        <div class="footer-bottom">
+            <p>© 2025 MP09 Family Saloon. All rights reserved.</p>
+            <p>Made with ❤️ in Indore</p>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+    // ===== TEAM DATA =====
+    const teamData = {
+        bhawar: [
+            { value: 'arjun', name: 'Arjun Sharma' },
+            { value: 'priya', name: 'Priya Verma' },
+            { value: 'rahul', name: 'Rahul Patel' }
+        ],
+        ranjeet: [
+            { value: 'sneha', name: 'Sneha Joshi' },
+            { value: 'vikram', name: 'Vikram Das' },
+            { value: 'nisha', name: 'Nisha Gupta' }
+        ],
+        kesar: [
+            { value: 'meera', name: 'Meera Singh' },
+            { value: 'karan', name: 'Karan Mehta' },
+            { value: 'anita', name: 'Anita Rawat' }
+        ]
+    };
+
+    // All time slots
+    const allSlots = [
+        '10:00 AM', '11:00 AM', '12:00 PM',
+        '01:00 PM', '02:00 PM', '03:00 PM',
+        '04:00 PM', '05:00 PM', '06:00 PM'
+    ];
+
+    // Fake booked slots (baad mein backend se aayenge)
+    const bookedSlots = {
+        'arjun': ['11:00 AM', '02:00 PM'],
+        'priya': ['10:00 AM', '04:00 PM'],
+        'rahul': ['12:00 PM', '05:00 PM'],
+        'sneha': ['01:00 PM', '03:00 PM'],
+        'vikram': ['10:00 AM', '06:00 PM'],
+        'nisha': ['11:00 AM', '01:00 PM'],
+        'meera': ['02:00 PM', '05:00 PM'],
+        'karan': ['10:00 AM', '03:00 PM'],
+        'anita': ['12:00 PM', '04:00 PM']
+    };
+
+    let selectedSlot = '';
+
+    // ===== TEAM SECTION FILTER =====
+    function filterTeam() {
+        const selected = document.getElementById('locationSelect').value;
+        const allCards = document.querySelectorAll('.team-card-wrap');
+        allCards.forEach(card => {
+            card.classList.toggle('active', card.dataset.location === selected);
+        });
+    }
+    filterTeam();
+
+    // ===== BOOKING FORM =====
+    function loadStylists() {
+        const location = document.getElementById('bookLocation').value;
+        const stylistSelect = document.getElementById('bookStylist');
+        const stylistGroup = document.getElementById('stylistGroup');
+        const dateGroup = document.getElementById('dateGroup');
+        const slotsGroup = document.getElementById('slotsGroup');
+        const personalDetails = document.getElementById('personalDetails');
+
+        // Reset sab
+        dateGroup.style.display = 'none';
+        slotsGroup.style.display = 'none';
+        personalDetails.style.display = 'none';
+        document.getElementById('slotsContainer').innerHTML = '';
+        selectedSlot = '';
+
+        if (!location) {
+            stylistGroup.style.display = 'none';
+            return;
+        }
+
+        // Stylists load karo
+        stylistSelect.innerHTML = '<option value="">-- Choose Stylist --</option>';
+        teamData[location].forEach(member => {
+            stylistSelect.innerHTML += `<option value="${member.value}">${member.name}</option>`;
+        });
+
+        stylistGroup.style.display = 'block';
+
+        // Date field dikhao
+        dateGroup.style.display = 'block';
+
+        // Flatpickr sirf ek baar initialize karo
+        if (!document.getElementById('bookDate')._flatpickr) {
+            flatpickr("#bookDate", {
+                minDate: new Date(),
+                dateFormat: "Y-m-d",
+                disableMobile: true,
+                onChange: function () {
+                    loadSlots();
+                }
+            });
+        }
+    }
+
+function loadSlots() {
+    const stylist = document.getElementById('bookStylist').value;
+    const date = document.getElementById('bookDate').value;
+    const slotsGroup = document.getElementById('slotsGroup');
+    const slotsContainer = document.getElementById('slotsContainer');
+    const personalDetails = document.getElementById('personalDetails');
+
+    selectedSlot = '';
+    personalDetails.style.display = 'none';
+
+    if (!stylist || !date) {
+        slotsGroup.style.display = 'none';
+        return;
+    }
+
+    // Backend se booked slots fetch karo
+    fetch(`/api/booked-slots?stylist=${stylist}&date=${date}`)
+        .then(response => response.json())
+        .then(bookedSlots => {
+            slotsContainer.innerHTML = '';
+
+            allSlots.forEach(slot => {
+                const isBooked = bookedSlots.includes(slot);
+                slotsContainer.innerHTML += `
+                    <div class="slot ${isBooked ? 'booked' : ''}"
+                         onclick="${isBooked ? '' : `selectSlot(this, '${slot}')`}">
+                        ${slot}
+                    </div>`;
+            });
+
+            slotsGroup.style.display = 'block';
+        });
+}
+
+    function selectSlot(el, slot) {
+        document.querySelectorAll('.slot').forEach(s => s.classList.remove('selected'));
+        el.classList.add('selected');
+        selectedSlot = slot;
+        document.getElementById('personalDetails').style.display = 'block';
+    }
+
+function submitBooking() {
+    const name = document.getElementById('bookName').value.trim();
+    const phone = document.getElementById('bookPhone').value.trim();
+    const stylistEl = document.getElementById('bookStylist');
+    const stylistName = stylistEl.options[stylistEl.selectedIndex].text;
+    const date = document.getElementById('bookDate').value;
+    const locationEl = document.getElementById('bookLocation');
+    const locationName = locationEl.options[locationEl.selectedIndex].text;
+    const stylist = stylistEl.value;
+    const location = locationEl.value;
+
+    if (!name || !phone || !selectedSlot) {
+        alert('Please fill all details!');
+        return;
+    }
+
+    // Backend mein save karo
+    fetch('/api/book', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            customerName: name,
+            phone: phone,
+            location: location,
+            stylist: stylist,
+            date: date,
+            timeSlot: selectedSlot
+        })
+    })
+    .then(response => response.text())
+    .then(result => {
+        if (result === 'SUCCESS') {
+            document.getElementById('bookingForm').style.display = 'none';
+            const confirmMsg = document.getElementById('confirmMsg');
+            confirmMsg.classList.add('show');
+            document.getElementById('confirmText').innerHTML = `
+                <strong style="color: var(--gold);">${name}</strong>, your appointment is confirmed!<br><br>
+                📍 <strong>${locationName}</strong><br>
+                ✂️ Stylist: <strong>${stylistName}</strong><br>
+                📅 Date: <strong>${date}</strong><br>
+                ⏰ Time: <strong>${selectedSlot}</strong><br><br>
+                We'll call you on <strong>${phone}</strong> to confirm.
+            `;
+        }
+    });
+}
+
+    function resetForm() {
+        document.getElementById('bookingForm').style.display = 'block';
+        document.getElementById('confirmMsg').classList.remove('show');
+        document.getElementById('bookLocation').value = '';
+        document.getElementById('stylistGroup').style.display = 'none';
+        document.getElementById('dateGroup').style.display = 'none';
+        document.getElementById('slotsGroup').style.display = 'none';
+        document.getElementById('personalDetails').style.display = 'none';
+        selectedSlot = '';
+    }
+</script>
+
+<script>
+    // Team filter by location
+    function filterTeam() {
+        const selected = document.getElementById('locationSelect').value;
+        const allCards = document.querySelectorAll('.team-card-wrap');
+
+        allCards.forEach(card => {
+            if (card.dataset.location === selected) {
+                card.classList.add('active');
+            } else {
+                card.classList.remove('active');
+            }
+        });
+    }
+
+    // Page load pe pehli location show karo
+    filterTeam();
+</script>
+
+<script>
+    // Auto image slider
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    setInterval(() => {
+        slides[current].classList.remove('active');
+        current = (current + 1) % slides.length;
+        slides[current].classList.add('active');
+    }, 3000); // 3 second mein change hoga
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+<!-- Flatpickr JS -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</body>
+
+</html>
